@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>运算方法与运算器 · 交互式动画课堂</title>
+<meta name="description" content="计算机组成原理·运算方法与运算器：用交互式动画一步步看懂数据表示、定点加减乘除、运算器组成与浮点运算">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- 侧边栏导航 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo">🧮</div>
+      <div class="brand-text">
+        <div class="brand-title">运算方法与运算器</div>
+        <div class="brand-sub">交互式动画课堂</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-foot">
+      <div class="progress-card">
+        <div class="progress-head">学习进度</div>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-num" id="progressNum">0 / 6 章</div>
+        <button class="btn btn-ghost btn-sm" id="resetProgress" type="button">重置进度</button>
+      </div>
+      <div class="sidebar-tip">💡 点开每一章的“动画演示”，跟着步骤走一遍，比看十遍书都有用。</div>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- 主区域 -->
+  <main class="main">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+      <div class="topbar-title">
+        <span class="topbar-chap" id="topbarChap"></span>
+        <span class="topbar-dot">·</span>
+        <span class="topbar-sec" id="topbarSec"></span>
+      </div>
+      <button class="btn btn-ghost btn-sm topbar-home" id="homeBtn" type="button">🏠 首页</button>
+    </header>
+    <div class="content" id="content"></div>
+    <footer class="foot">
+      计算机组成原理 · 第 2 章《运算方法和运算器》交互式讲解 &nbsp;|&nbsp; 内容参考：唐朔飞《计算机组成原理》、IEEE 754 标准、SN74181 数据手册
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/ch1.js"></script>
+<script src="js/ch2.js"></script>
+<script src="js/ch3.js"></script>
+<script src="js/ch4.js"></script>
+<script src="js/ch5.js"></script>
+<script src="js/ch6.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
